@@ -78,13 +78,48 @@ fn main() {
     println!("access first node: {:?}", head.borrow().access(0));
     println!("access 100th node: {:?}", head.borrow().access(99));
 
-    println!("find {} index: {}", 3, head.borrow().find(3));
-    println!("find {} index: {}", 9, head.borrow().find(9));
-    println!("find {} index: {}", 29, head.borrow().find(29));
-    println!("find {} index: {}", 10, head.borrow().find(10));
-    println!("find {} index: {}", 20, head.borrow().find(20));
-    println!("find {} index: {}", 29, head.borrow().find(29));
-    println!("find {} index: {}", 42, head.borrow().find(42));
+    println!(
+        "find {} index: {}, found: {}",
+        3,
+        head.borrow().find(3),
+        head.borrow().find(3) != -1,
+    );
+    println!(
+        "find {} index: {}, found: {}",
+        9,
+        head.borrow().find(9),
+        head.borrow().find(9) != -1,
+    );
+    println!(
+        "find {} index: {}, found: {}",
+        29,
+        head.borrow().find(29),
+        head.borrow().find(29) != -1
+    );
+    println!(
+        "find {} index: {}, found: {}",
+        10,
+        head.borrow().find(10),
+        head.borrow().find(10) != -1
+    );
+    println!(
+        "find {} index: {}, found: {}",
+        20,
+        head.borrow().find(20),
+        head.borrow().find(20) != -1
+    );
+    println!(
+        "find {} index: {}, found: {}",
+        29,
+        head.borrow().find(29),
+        head.borrow().find(29) != -1
+    );
+    println!(
+        "find {} index: {}, found: {}",
+        42,
+        head.borrow().find(42),
+        head.borrow().find(42) != -1
+    );
 
     println!("access first node: {:?}", head.borrow().access(0).unwrap());
     println!("debug link list  : {:?}", head);
